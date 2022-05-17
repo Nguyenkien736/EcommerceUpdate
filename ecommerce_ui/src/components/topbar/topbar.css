@@ -1,0 +1,32 @@
+.topbarbody{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 10%;
+    background-color: darkcyan;
+    
+}
+.logo{
+    text-align: center;
+    display: flex;
+
+    width: 20%;
+    font-weight: bolder;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    
+}
+.middle{
+    width: 50%;
+    text-align: center;
+    height: 50%;
+    display: flex;
+}
+.right{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-items: stretch;
+    justify-content: space-around;
+}

@@ -1,0 +1,65 @@
+.itempagebody{
+    height: 100%;
+
+}
+.iteminfoWrapper{
+    height:60%;
+    margin-left: 15%;
+    width: 80%;
+    display: flex;
+    padding-top: 5%;
+}
+.itempageimage{
+    
+    width: 30%;
+    height: 90%;
+    background-image :url(http://images.amazon.com/images/P/0596004478.01._PE30_PI_SCMZZZZZZZ_.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.itempageinfo{
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+
+
+}
+.itempagetittle{
+    font-size: xx-large;
+}
+.buttons{
+    display: flex;
+    height: 10%;
+    justify-content: space-around;
+}
+.button{
+    width: 45%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: aqua;
+}
+.check{
+    color: orange;
+
+}
+.uncheck{
+    color: antiquewhite;
+}
+.itemrating{
+    display: flex;
+}
+.itempageprice{
+    color: red;
+    font-size: x-large;
+
+}
+.stockAlerts{
+    font-weight: 100;
+    font-size: small;
+}

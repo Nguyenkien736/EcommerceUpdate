@@ -1,0 +1,60 @@
+.searchBody{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+.searchfield{
+
+    background-color: inherit;
+    height: 20px;
+    font-size: medium;
+    width: 100%;
+    
+    padding-right: 20px;
+    border:none
+
+}
+
+.searchfield:focus{
+    outline: none;
+
+    
+}
+.fieldWrapper{
+    width: 90%;
+    
+
+}
+.buttonWrapper{
+    margin-left: 10px;
+
+
+}
+.searchbutton{
+    width: 100%;
+    display: flex;
+    align-self: center;
+   
+
+}
+.gridparent{
+    padding-left: 3px;
+
+    background-color: antiquewhite;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.searchbuttonWrapper{
+
+}
+.svg{
+
+    
+}

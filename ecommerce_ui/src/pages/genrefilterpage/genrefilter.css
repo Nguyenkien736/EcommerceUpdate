@@ -1,0 +1,19 @@
+.genrefilterbody{
+    width: 100%;
+    height: 100%;
+   
+}
+.genrefilter{
+    display: flex;
+    flex-direction: row;
+    
+}
+.itemdisplaybody{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.filterbody{
+    margin-left: 10%;
+    margin-right: 10%;
+}

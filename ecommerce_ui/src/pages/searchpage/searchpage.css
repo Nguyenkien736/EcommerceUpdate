@@ -1,0 +1,22 @@
+.searchpagebody{
+    height: 100%;
+}
+.searchResultWrapper{
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns:  repeat(5,16%);
+    grid-template-rows: repeat(5);
+    align-items: stretch;
+   
+}
+.resdisplay{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.header{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-weight: 100;
+    font-size: large;
+}
