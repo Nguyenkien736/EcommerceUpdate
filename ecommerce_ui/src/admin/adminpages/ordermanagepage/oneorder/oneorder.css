@@ -1,0 +1,140 @@
+.admin-order-wrapper{
+    height: 100%;
+    display: flex ;
+    width: 100%;
+
+}
+.admin-order-body-wrapper{
+    flex:6;
+    width: 100%;
+}
+.admin-order-itemlist{
+    display: flex;
+    width: 90%;
+    
+}
+.order-customer{
+    flex: 2;
+    
+    margin-left: 2em;
+}
+.order-summary{
+    flex: 1;
+
+    margin-right: 2%;    
+}
+.admin-itemlist{
+    height: 25em;
+    background-color: aqua;
+    margin:1em;
+    border-radius: 2em;
+    overflow-y: scroll;
+    align-items: center;
+    display: flex;
+    
+
+}
+
+.admin-customer-detail{
+    height: 20em;
+    border-radius: 2em;
+    margin: 1em;
+    display: flex;
+    background-color: aqua;
+    flex-direction: column;
+
+}
+.order-summary-card{
+    background-color: aqua;
+    margin: 1em;
+    height: 30em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.order-address{
+    border-radius: 2em;
+    background-color: aqua;
+    margin: 1em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.inside-field{
+    height: 2em;
+    display: flex;
+    margin: .5em;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.linebreaker{
+    width: 92%;    
+    color: black;
+    visibility: visible;
+
+}
+.order-field{
+    height: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    justify-content: space-between;
+    display: flex;
+
+}
+.order-title{
+    font-size: x-large;
+    height: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    
+
+}
+.address-title{
+    font-size: x-large;
+    height: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+
+}
+.address-field{
+    height: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.approve-button{
+    margin-top: 5em;
+}
+.id-order{
+    font-size: x-large;
+    margin-left: 3em;
+    font-weight: bold;
+    color: orange;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

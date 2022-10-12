@@ -31,10 +31,27 @@ router.post("/createitem",async(req,res)=>{
         await newitemgenre.save()
         res.status(200).json(item)
     }catch(err){
+        console.log(err)
         res.status(404).send("Error")
     }
 
 })
+
+router.get("/countitem",async(req,res)=>{
+    try{
+        const itemcount = await Item.find({})
+        res.status(200).json({
+            count: itemcount.length
+        } 
+        )
+        
+
+    }catch(err){
+        console.log(err)
+        res.send("ERR")
+    }
+})
+
 
 router.get("/getitem/:id",async(req,res)=>{
     try{
@@ -104,7 +121,7 @@ router.get("/bestsellers/:page",async(req,res)=>{
     const skipnum = req.params.page
     const bestsellers = await Item.find({
 
-    }).sort({"_id":1}).sort({"sellingamount":1}).skip(skipnum).limit(10)
+    }).sort({"_id":1}).sort({"sellingamount":1}).skip(skipnum-1).limit(10)
     res.status(200).json(bestsellers)
 })
 
@@ -153,6 +170,21 @@ router.get('/search',async(req,res)=>{
     }
 })
 
+//get item with cue
+
+router.get('/getitem-with-cue/:id',async (req,res)=>{
+    try{
+        const s = req.params.id
+        const regex = new RegExp(s, 'i') // i for case insensitive
+        const itemList = await Item.find({itemname: {$regex: regex}})
+        res.status(200).json(itemList)
+
+    }catch(err){
+        console.log(err)
+        res.send("ERR")
+    }
+})
+
 
 // return new book
 router.get("/bestsellers/:page",async(req,res)=>{
@@ -163,4 +195,40 @@ router.get("/bestsellers/:page",async(req,res)=>{
     res.status(200).json(bestsellers)
 })
 
+router.get("/getsomeitem", async (req, res) => {
+    try {
+        const orders = await Item.find({}).sort({ "createAt": -1 }).skip(req.query.page).limit(req.query.limit)
+        const total = await Item.count({})
+        // const resp = []
+        // for (let i = 0; i < orders.length; i++) {
+        //     console.log(orders[i])
+        //     let money = await OrderService.calculateEarning([orders[i]])
+        //     const order = {
+        //         orderid: orders[i]._id,
+        //         order_date: orders[i].createdAt,
+        //         total: money,
+        //         status: orders[i].orderstatus
+        //     }
+        //     const user_order = await User.findById(orders[i].userid)
+        //     let products = []
+        //     for (let j = 0; j < orders[i].itemidlist.length; j++) {
+        //         const product = await Item.findById(orders[i].itemidlist[j])
+        //         products.push(product.itemname)
+        //     }
+        //     order.products = products
+        //     order.customer_name = user_order.userfullname
+        //     resp.push(order)
+        //     console.log(resp)
+
+        // }
+        const result = {
+            data: orders,
+            total: total
+        }
+        res.status(200).json(result)
+    } catch (err) {
+        console.log(err)
+    }
+
+})
 module.exports = router

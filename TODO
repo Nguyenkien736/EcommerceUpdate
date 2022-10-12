@@ -1,0 +1,45 @@
+// TODO:
+
+// Rating system
+	// only rate in my order                done
+
+
+
+// Logout functionality
+	// Account Cart button must not work   	checked
+	// Add to Cart button must not work		checked
+	// "/" should return home page			checked
+
+
+
+
+// Best seller site
+
+// Best rate site
+
+// New book site
+
+// For you site
+
+// Genre site
+
+
+// pagenified
+
+// Responsive ???
+
+// Order decrease the number of products
+
+// Dont let order pass when user dont have address		done
+
+
+// Admin Pages
+	// Dash board
+		// Statistical charts
+	// Order mangagement
+	// User mangagement
+	// Book mangagement
+	// Genre mangagement
+	// Firebase to save image
+	// Custom banner
+

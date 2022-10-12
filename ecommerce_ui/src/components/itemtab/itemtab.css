@@ -32,12 +32,13 @@
 
 }
 .itemtittle{
-    font-size: small;
+    font-size: large;
     display: grid;
-    height: 35px;
+    height: 30%;
     width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 2%;
 
 }
 .itemrating{
@@ -57,5 +58,6 @@
 }
 .itemprice{
 text-decoration: none;
+margin-top: 2%;
 
 }

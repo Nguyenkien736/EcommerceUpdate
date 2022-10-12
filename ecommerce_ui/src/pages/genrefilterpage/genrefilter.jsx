@@ -3,6 +3,7 @@ import Topbar from '../../components/topbar/topbar'
 import Genrebar from '../../components/genrebar/genrebar'
 import { useState } from 'react'
 import Itemtab from '../../components/itemtab/itemtab'
+import Footer from '../../components/botbar/botbar'
 
 export default function Genrrefilterpage(){
     const genres = ["action","fiction","documentary"]
@@ -51,7 +52,7 @@ export default function Genrrefilterpage(){
 
             </div>
             </div>
-            
+            <Footer></Footer>
         </div>
     )
 }

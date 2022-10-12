@@ -1,0 +1,8 @@
+.list-allitem {
+    display: flex;
+    width: 100%;
+    
+  }
+  .listContainer-allitem {
+    flex: 6;
+  }

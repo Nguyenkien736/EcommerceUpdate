@@ -1,0 +1,8 @@
+.all-genre-wrapper{
+    display: flex;
+    width: 100%;
+    
+  }
+  .all-genre-body-wrapper {
+    flex: 6;
+  }

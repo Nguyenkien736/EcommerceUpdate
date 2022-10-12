@@ -8,10 +8,17 @@ const RattingScheme = new mongoose.Schema({
     itemid:{
         type:mongoose.Types.ObjectId
     },
+    orderid:{
+        type: mongoose.Types.ObjectId
+    },
     rate:{
         type:Number,
         max:5,
-        min:0
+        min:1
+    },
+    message:{
+        type:String
     }
 
 })
+module.exports = mongoose.model("Ratting",RattingScheme)

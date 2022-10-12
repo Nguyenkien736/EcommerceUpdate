@@ -1,0 +1,21 @@
+.cueWrapper{
+    background-color: aliceblue;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 200%;
+    z-index: 100;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+}
+.linkWrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content:space-around ;
+
+}
+.imgCue{
+    width: 20%;
+    height: 100%;
+}

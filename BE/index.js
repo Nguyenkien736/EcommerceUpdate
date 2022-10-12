@@ -8,6 +8,8 @@ const userRoute = require('../BE/routers/users')
 const authRoute = require('../BE/routers/auth')
 const itemRoute = require("../BE/routers/items")
 const genreRoute = require("../BE/routers/genres")
+const orderRoute = require("../BE/routers/orders")
+const mediaRoute = require("../BE/routers/media")
 const { application } = require("express")
 const { getRounds } = require("bcrypt")
 require('dotenv').config()
@@ -31,7 +33,8 @@ app.use("/api/user",userRoute)
 app.use("/api/auth",authRoute)
 app.use("/api/item",itemRoute)
 app.use("/api/genre",genreRoute)
-
+app.use("/api/order",orderRoute)
+app.use("/api/media",mediaRoute)
 
 app.listen(8080,()=>{
     console.log("back end server is running")

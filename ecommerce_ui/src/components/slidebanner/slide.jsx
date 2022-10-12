@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../slidebanner/slide.css"
 import img1 from "../../media/Hyouka.jpg"
+import axios from "axios";
 const IMG = "http://images.amazon.com/images/P/0596004478.01._PE30_PI_SCMZZZZZZZ_.jpg"
 const pictures =["url("+img1+")","url("+IMG+")","url("+img1+")"] 
 const delay = 2500;
 export default function Slideshow() {
   const [index, setIndex] = React.useState(0);
+  const [pictures,setPictures] = useState([]);
   const timeoutRef = React.useRef(null);
 
   function resetTimeout() {
@@ -13,6 +15,15 @@ export default function Slideshow() {
       clearTimeout(timeoutRef.current);
     }
   }
+  useEffect(()=>{
+    const fetchData = async ()=>{
+      const response = await axios.get("/media/getAllImg")
+      
+      setPictures(response.data)
+    }
+    fetchData()
+
+  },[])
 
   React.useEffect(() => {
     resetTimeout();
@@ -39,7 +50,8 @@ export default function Slideshow() {
           <div
             className="slide"
             key={index}
-            style={{ backgroundImage:backgroundImage }}>
+            style={{ backgroundImage:`url(${backgroundImage.imgurl})` }}>
+              <img src={backgroundImage.imgurl} className="BannerCoverImg"></img>
               
           </div>
         ))}

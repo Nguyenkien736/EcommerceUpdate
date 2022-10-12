@@ -17,7 +17,7 @@
     min-width: 15%;
     height: 20vh;
     background-color: rgb(209, 202, 202);
-    background-image: url("https://ia902703.us.archive.org/BookReader/BookReaderPreview.php?id=coloritsapplicat00andriala&itemPath=%2F2%2Fitems%2Fcoloritsapplicat00andriala&server=ia902703.us.archive.org&page=cover_w200.jpg");
+   
 
     background-position: center;
     background-repeat: no-repeat;
@@ -37,6 +37,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    flex-direction: row;
 
 
 
@@ -68,6 +69,7 @@
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+    min-height: 60vh;
 }
 .totalAmount{
     text-align: right;
@@ -75,7 +77,7 @@
     font-weight: bold;
 
 }
-.buybuttonWrapper{
+.checkoutbuttonWrapper{
     height: 40vh;
     width: 40%;
 
@@ -83,7 +85,7 @@
    
    
     display: flex;
-    
+    align-items: center;
     justify-content: center;
 
 }

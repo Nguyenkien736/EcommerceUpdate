@@ -30,3 +30,16 @@
     justify-items: stretch;
     justify-content: space-around;
 }
+.linkright{
+    text-decoration: none;
+    text-decoration-color: black;
+    color: black;
+    width: 100%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-items: stretch;
+    justify-content: space-around;
+    
+
+}

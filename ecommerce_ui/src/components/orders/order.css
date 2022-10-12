@@ -1,0 +1,27 @@
+.order-wrapper{
+    border: solid 1px rgb(206, 206, 206);
+
+    margin: 1%;
+    border-radius: 5px;
+}
+.itemlist{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.item{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 30vh;
+    background-color: rgb(229, 226, 226);
+    margin: 1%;
+    border-radius: 5px;
+    padding: 1%;
+}
+.img{
+    height: 100%;
+    width: 15%;
+    
+}

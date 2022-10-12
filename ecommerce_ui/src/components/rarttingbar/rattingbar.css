@@ -1,0 +1,118 @@
+
+.item{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 30vh;
+    background-color: rgb(229, 226, 226);
+    margin: 1%;
+    border-radius: 5px;
+    padding: 1%;
+    height: 30vh;
+
+}
+.img{
+    height: 100%;
+    width: 15%;
+    
+}
+.container-ratingbar{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: #ffffff;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .rating {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    margin-left: 1em;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+    width: 100%;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #09f;
+  }
+  
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
+
+  textarea{
+    width: 18em;
+    height: 15em;
+    padding: 2%;
+    resize: none;
+  }
+  .rattingWrapper{
+    width: 100%;
+    padding: 2%;
+  }
+  h4{
+    text-align: center;
+    margin: 0;
+  }

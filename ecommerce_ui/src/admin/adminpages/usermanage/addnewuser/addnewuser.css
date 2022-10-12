@@ -1,0 +1,35 @@
+.add-user-wrapper {
+    display: flex;
+    width: 100%;
+    
+  }
+  .add-user-body-wrapper {
+    flex: 6;
+  }
+  .add-user-body{
+    width: 40em;
+    height: 30em;
+    margin: 2em;
+    margin-left: 5em;
+    background-color: aqua;
+    border-radius: 2em;
+    margin-top: 5em;
+    display: flex;
+  }
+  .add-user-tab{
+    margin-top: 5em;
+    margin: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .add-user-field{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+  }
+  .function-add-user{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3em;
+  }

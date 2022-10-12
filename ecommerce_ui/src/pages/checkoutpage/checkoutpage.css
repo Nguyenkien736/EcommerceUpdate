@@ -1,0 +1,109 @@
+
+.cartitemsWrapper{
+    height: fit-content;
+    width: 60%;
+    background-color: rgb(250, 250, 250);
+    padding: 1%;
+
+    border: black 5px;
+
+
+}
+.checkoutbody{
+    height: 100%;
+    background-color: azure;
+
+}
+.itemcartImage{
+    min-width: 15%;
+    height: 20vh;
+    background-color: rgb(209, 202, 202);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid rgb(130, 199, 187);
+}
+.itemscart{
+    display: flex;
+    background-color: rgb(241, 248, 248);
+    height: 30%;
+    margin: 2%;
+    padding: 1%;
+}
+.itemcartinfoWrapper{
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.itemcartTittle{
+    font-size: xx-large;
+    width: 15vh;
+    overflow: hidden;
+    
+}
+.itemcartprice{
+    color: crimson;
+
+    font-weight: 700;
+    width: 18vh;
+    overflow-y:scroll;
+}
+.cartlist{
+    height: 100%;
+
+}
+.qtypicker{
+    display: inline-block ;
+    width: fit-content;
+    
+}
+.bodyCheckoutWrapper{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.totalAmount{
+    text-align: right;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+.buybuttonWrapper{
+    height: 20vh;
+    width: 40%;
+
+    margin-top: 2%;
+   
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.buybutton{
+    height: 8vh;
+    width: 25vw;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+}
+.inputHolder{
+    font-size: large;
+   margin: 1%;
+    width: 25vw;
+}
+.inputHolder input{
+    width: 100%;
+    font-size: large;
+    padding: 1%;
+}

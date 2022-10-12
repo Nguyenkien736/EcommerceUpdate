@@ -30,7 +30,7 @@ const UserSchema = new mongoose.Schema({
         required:true
     },
     dob:{
-        type:String
+        type:Date
     },
     currentcartitems:{
         type:[mongoose.Types.ObjectId],
@@ -39,7 +39,8 @@ const UserSchema = new mongoose.Schema({
     currentcartquantity:{
         type:[Number],
         default:[]
-    }
-    
+    }   
+},{
+    timestamps:true
 })
 module.exports = mongoose.model("User",UserSchema)

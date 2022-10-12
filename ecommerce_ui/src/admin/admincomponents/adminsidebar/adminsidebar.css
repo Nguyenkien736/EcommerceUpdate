@@ -1,0 +1,16 @@
+.side-bar-wrapper{
+    background-color: aqua;
+    min-height: 100vh;
+    flex: 1;
+    width: 15%;
+    position: relative;
+
+}
+.nav-bar-container{
+    height: 2em;
+    text-align: center;
+    margin-top: 1em;
+    font-size: xx-large;
+    font-weight: bold;
+
+}

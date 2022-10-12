@@ -6,7 +6,7 @@ const ItemSchema = new mongoose.Schema({
         required:true
     },
     price:{
-        type:String,
+        type:Number,
         required:true
     },
     picture:{
@@ -44,8 +44,13 @@ const ItemSchema = new mongoose.Schema({
     },
     uploaddate:{
         type:Date,
-        required:true
+        //required:true
+    },
+    rattingcount:{
+        type:Number,
+        default:0
     }
+
 
 
 },{

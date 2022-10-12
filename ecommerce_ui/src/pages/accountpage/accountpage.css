@@ -1,59 +1,66 @@
-.accountpagebody{
-    height: 100%;
+.accountpagebody {
+  height: 100%;
 }
-.accountbody{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    height: 60%;
+.accountbody {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  height: 60%;
 }
-.menubar{
-    width: 10%;
-    border-right: 3px rgb(214, 214, 214) solid;
+.menubar {
+  width: 10%;
+  border-right: 3px rgb(214, 214, 214) solid;
+}
+.infobar {
+  margin-left: 2%;
+  width: 100%;
+  display: flex;
+}
+.infobarWrapper {
+  width: 60%;
+}
+.personalinfo {
+  width: 50%;
+}
+.contact {
+  width: 50%;
+}
+.info {
+  text-align: end;
+}
+input {
+  height: 3vh;
 
-    
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px rgb(189, 189, 189) solid;
 }
-.infobar{
-    margin-left: 2%;
-    width: 100%;
-    display: flex;
+input:focus {
+  outline: none;
 }
-.infobarWrapper{
-    width: 60%;
+.updatebutton {
+  width: 15%;
+  height: 50%;
+  background-color: blueviolet;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: 2%;
 }
-.personalinfo{
-    width: 50%;
-
+.updatebutton:hover {
+  cursor: pointer;
 }
-.contact{
-    width: 50%;
-
+.updatebutton:disabled {
+  cursor: not-allowed;
+  background-color: rgb(206, 190, 221);
 }
-.info{
-    text-align: end;
-}
-input{
-    height: 3vh;
-
-    border-radius: 5px;
-    box-shadow: none;
-    border: 1px rgb(189, 189, 189) solid ;
-    
-}
-input:focus{
-    outline: none;
-}
-.updatebutton{
-    width: 20%;
-    height: 10%;
-    background-color: blueviolet;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px blueviolet solid;
-    color: white;
-    align-self:end;
-    margin-left: 45%;
-    margin-top: 20%;
-
+.buttonGroup {
+  padding-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10vh;
 }

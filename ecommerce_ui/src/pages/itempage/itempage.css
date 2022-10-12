@@ -27,6 +27,11 @@
 
 
 }
+.ImgCover{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .itempagetittle{
     font-size: xx-large;
 }
@@ -39,10 +44,14 @@
     width: 45%;
     display: flex;
 
+
     justify-content: center;
     align-items: center;
     height: 100%;
     background-color: aqua;
+}
+.button:hover{
+    cursor: pointer;
 }
 .check{
     color: orange;
